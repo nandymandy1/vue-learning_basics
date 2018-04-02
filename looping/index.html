@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Events in Vue.js</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+
+    <div class="" id="app">
+      <h1>Looping</h1>
+      <h3>Marvals</h3>
+      <ul>
+        <li v-for="m of marvals">{{ m }}</li>
+      </ul>
+      <hr>
+      <h3>DC</h3>
+        <ul>
+          <li v-for="d of dc">{{ d }}</li>
+        </ul>
+        <hr>
+      <h3>Students</h3>
+        <ul>
+          <li v-for="(student, index) of students">{{ index+1 }}. Name: {{ student.name }}, Age: {{ student.age }}</li>
+        </ul>
+        <hr>
+      <h3>Raw Object Looping</h3>
+        <ul>
+          <li v-for="student of students">{{ student }}</li>
+        </ul>
+        <hr>
+      <template v-for="(student, index) of students">
+        <h3>Name: {{ student.name }}</h3>
+        <p>Age: {{ student.age }}</p>
+      </template>
+      <hr>
+      <template v-for="student of students">
+        <div class="" v-for="(val, key) in student">
+          <p><b>{{key}}</b>: {{val}}</p>
+        </div>
+        <hr>
+      </template>
+    </div>
+
+    <script src="../util/vue.js" charset="utf-8"></script>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>

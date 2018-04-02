@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutorial 1</title>
+    <link rel="stylesheet" href="../util/style.css">
+  </head>
+  <body>
+    <div id="vue-app">
+      <h3>{{ job }}</h3>
+      <p>{{ greet('night') }}</p>
+      <h4>Data Binding</h4>
+      <a v-bind:href="website">The Net Nija</a>
+      <input type="text" name="" v-bind:value="name">
+      <p v-html="websiteTag"></p>
+    </div>
+
+  <script src="../util/vue.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

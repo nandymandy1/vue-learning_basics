@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Events in Vue.js</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="" id="app">
+      <h1>Data Binding 2 Way</h1>
+      <label for="">Name:</label>
+      <input type="text" v-model="name">
+      <span>{{ name }}</span>
+      <br>
+      <br>
+      <label for="">Age:</label>
+      <input type="text" v-model="age">
+      <span>{{ age }}</span>
+    </div>
+
+    <script src="../util/vue.js" charset="utf-8"></script>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>

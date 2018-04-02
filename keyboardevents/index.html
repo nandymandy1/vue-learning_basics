@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Events in Vue.js</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="" id="app">
+      <h1>Keyboard Events</h1>
+      Enter
+      <label for="">Name:</label>
+      <input type="text" @keyup.enter="logName">
+      <label for="">Age:</label>
+      <input type="text" @keyup.enter="logAge">
+      <hr>
+      Alt
+      <label for="">Address:</label>
+      <input type="text" @keyup.alt.enter="logAdd">
+      <hr>
+      Control
+      <label for="">Contact:</label>
+      <input type="text" @keyup.ctrl.enter="logCont">
+      <br>
+      <a href="https://vuejs.org/v2/guide/events.html#Automatic-Key-Modifiers">Keyboard Modifiers</a>
+    </div>
+
+    <script src="../util/vue.js" charset="utf-8"></script>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>

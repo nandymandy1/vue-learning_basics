@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Events in Vue.js</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+
+    <div class="" id="app">
+      <h1>Conditionals</h1>
+      <button @click="error = !error">Toggle Error</button>
+      <button @click="success = !success">Toggle Success</button>
+      <!--<p v-if="error">There has been an Error :(</p>
+      <p v-else-if="success">It was Success :)</p>-->
+      <p v-show="error">There has been an Error :(</p>
+      <p v-show="success">It was Success :)</p>
+    </div>
+
+    <script src="../util/vue.js" charset="utf-8"></script>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>
+
+<!--
+V-show only makes the display of the element None
+V-if else removes the Element completely out of the DOM
+-->
